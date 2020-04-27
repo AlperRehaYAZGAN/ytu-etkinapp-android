@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:layout_margin="10dp"
+    android:gravity="center_vertical">
+
+    <TextView
+        android:id="@+id/comment_list_item_txt_user"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="14sp"
+        android:textColor="@color/app_gray"
+        android:textStyle="bold"
+        android:text="alperreha38 : "
+        />
+
+    <TextView
+        android:id="@+id/comment_list_item_txt_comment"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Guzel bir etkinlik"
+        android:textSize="12sp"
+        android:textStyle="normal"
+        android:textColor="@color/app_gray"/>
+
+    <View
+        android:layout_width="0dp"
+        android:layout_height="1dp"
+        android:layout_weight="1"/>
+
+    <TextView
+        android:id="@+id/comment_list_item_txt_createddate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textStyle="normal"
+        android:text="12/23/2020"
+        android:textSize="10sp"/>
+
+
+</LinearLayout>

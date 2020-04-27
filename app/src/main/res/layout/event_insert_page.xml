@@ -1,0 +1,202 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center_horizontal">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#BA2D0B"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:weightSum="3"
+                >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="horizontal"
+                    android:gravity="center_vertical">
+
+                    <ImageView
+                        android:id="@+id/event_insert_btn_previous"
+                        android:layout_width="25dp"
+                        android:layout_height="25dp"
+                        android:layout_margin="5dp"
+                        android:src="@drawable/dr_ic_previous"/>
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="horizontal"
+                    android:gravity="center">
+
+                    <ImageView
+                        android:layout_width="25dp"
+                        android:layout_height="25dp"
+                        android:layout_margin="5dp"
+                        android:src="@drawable/ic_dr_ic_ticket"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Etkin App"
+                        android:textSize="16sp"
+                        android:textStyle="bold"
+                        android:textColor="#FFFFFF"/>
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="horizontal"
+                    android:gravity="center_vertical">
+
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:gravity="center_horizontal">
+
+                <TextView
+                    android:layout_marginTop="10dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Lutfen Tarihleri Su Sekilde Giriniz. \n 2020-04-28 18:00:00"
+                    android:textColor="#333333"
+                    android:textSize="12sp"/>
+
+                <EditText
+                    android:id="@+id/event_insert_etxt_title"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Etkinlik Başlığını Giriniz."
+                    android:layout_margin="10dp"
+                    android:textSize="12sp"
+                    />
+
+                <EditText
+                    android:id="@+id/event_insert_etxt_content"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Etkinlik İçeriğini Giriniz."
+                    android:layout_margin="10dp"
+                    android:textSize="12sp"
+                    />
+
+                <EditText
+                    android:id="@+id/event_insert_etxt_maxattendee"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="numberSigned"
+                    android:hint="Maksimum Katılımcı Sayısı"
+                    android:layout_margin="10dp"
+                    android:textSize="12sp"
+                    />
+
+                <EditText
+                    android:id="@+id/event_insert_etxt_place"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="text"
+                    android:hint="Etkinlik Mekanı"
+                    android:layout_margin="10dp"
+                    android:textSize="12sp"
+                    />
+
+                <Button
+                    android:id="@+id/event_insert_get_eventstarts"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/app_red"
+                    android:layout_margin="10dp"
+                    android:textColor="@color/app_white"
+                    android:textSize="14sp"
+                    android:textStyle="bold"
+                    android:text="Etkinlik Başlama Tarihini Giriniz :"
+                    />
+
+                <Button
+                    android:id="@+id/event_insert_get_eventends"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/app_red"
+                    android:layout_margin="10dp"
+                    android:textColor="@color/app_white"
+                    android:textSize="14sp"
+                    android:textStyle="bold"
+                    android:text="Etkinlik Bitiş Tarihini Giriniz :"
+                    />
+
+                <Button
+                    android:id="@+id/event_insert_get_deadline"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/app_red"
+                    android:layout_margin="10dp"
+                    android:textColor="@color/app_white"
+                    android:textSize="14sp"
+                    android:textStyle="bold"
+                    android:text="Etkinliğe Son KatılımTarihini Giriniz :"
+                    />
+
+                <Button
+                    android:id="@+id/event_insert_eimg_images"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Etkinlik Resmini giriniz.(Galeriden)"
+                    android:background="@color/app_red"
+                    android:textColor="#FFFFFF"
+                    android:textSize="14sp"
+                    android:textStyle="bold"
+                    android:layout_margin="10dp"
+                    />
+
+                <Button
+                    android:id="@+id/event_insert_btn_send"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/app_green"
+                    android:text="Etkinlik Olustur"
+                    android:clickable="true"
+                    android:textColor="#FFFFFF"
+                    android:textSize="14sp"
+                    android:textStyle="bold"
+                    android:layout_margin="10dp"
+                    />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>
